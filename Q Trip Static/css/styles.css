@@ -77,7 +77,7 @@ footer {
   margin: 20px 0;
 }
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
