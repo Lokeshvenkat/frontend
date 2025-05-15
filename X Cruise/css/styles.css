@@ -1,87 +1,472 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set global font style */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    width: auto;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,51); /* dark navy */
+    padding: 15px 20px;
+}
+
+/* Logo image inside navbar */
 .logo img {
-    width: 50px;
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/xCruise-logo.png");
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: start;
 }
 
+/* Navigation menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Menu link spacing and appearance */
+.menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Navbar for tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        margin-left: 15px;
+    }
+}
+
+/* Responsive Navbar for small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .menu a {
+        margin-left: 10px;
+    }
+}
+
+/* Hero section styles */
 .hero {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png");
+    background: url('https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/hero-cruise.png?raw=true') center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Pills with updated images */
-.pills div:nth-child(1) img {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/weekend-cruises-pill.png");
+.hero-content {
+    margin-bottom: 1px;
 }
 
-.pills div:nth-child(2) img {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/summer-cruises-pill.png");
+.hero-content p {
+    margin-top: 10px;
 }
 
-.pills div:nth-child(3) img {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/exotic-cruises-pill.png");
+/* Call to action button */
+.btn {
+    padding: 12px 10px;
+    background-color: orangered;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-/* Banner image */
-.banner {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/caribbean-cruise.png");
+/* Book Now button text */
+.Book-Now {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif, poppins;
 }
 
-/* Destination card backgrounds */
-#card1 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/mediterranean-cruise.png");
+/* Discover section */
+.discover {
+    padding: 30px;
+    background-color: #fff; /* white background */
 }
 
-#card2 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/dubai-cruise.png");
+/* Container for discover content */
+.discover-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-#card3 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/northern-europe-cruise.png");
+/* Left-colored heading style */
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-left: 6px solid rgba(255, 196, 0, 0.95);
+    padding-left: 20px;
 }
 
-#card4 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/redsea-cruise.png");
+/* Heading text */
+.text-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-#card5 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/bermuda-beach-cruise.png");
+/* Popular tags section */
+.popular {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-#card6 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-africa-cruise.png");
+/* Popular label text */
+.popular p {
+    font-weight: bold;
+    margin: 0;
 }
 
-#card7 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-america-cruise.png");
+/* Container for pills */
+.pill-wrapper {
+    display: flex;
+    gap: 15px;
 }
 
-#card8 {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/asia-cruise.png");
+/* Individual pill style */
+.pills {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
-/* Optional: Bookmark icon in top-right of each card */
-.bookmark, .bookmarks {
-    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/save-icon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* Text inside pills */
+.pills div {
+    font-size: 14px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+}
+
+/* User avatars inside pills */
+.pills img {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    display: flex;
+    margin-right: 3px;
 }
 
-/* Social media icons */
-.social-icons img[alt="Instagram"] {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/instagram-icon.png");
+/* Adjust avatar image inside span */
+.pills span img {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5px;
 }
 
-.social-icons img[alt="Facebook"] {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/facebook-icon.png");
+/* Hover effect on pills */
+.pills:hover {
+    background-color: #e9e9e9;
 }
 
-.social-icons img[alt="YouTube"] {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/youtube-icon.png");
+/* Responsive styles for pills on smaller screens */
+@media (max-width: 768px) {
+    .heading {
+        text-align: center;
+    }
+
+    .popular {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pill-wrapper {
+        justify-content: center;
+    }
 }
 
-.social-icons img[alt="GMail"] {
-    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/gmail-icon.png");
+/* Banner section under discover */
+.discover-section-banner {
+    position: relative;
+    margin-bottom: -35px;
+}
+
+.discover-section-banner img {
+    width: 100%;
+    filter: brightness(80%);
+    height: auto;
+}
+
+/* Overlay destination info on image */
+.destination-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.destination-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.destination-info h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.destination-info p {
+    margin: 0;
+    font-size: 11px;
+}
+
+/* Destination cards layout */
+.destination-grid {
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+/* Individual card container */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/* Redundant selector that has no impact — safe to remove */
+.card.img2.img3.img4.img6.img7 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/* Responsive columns for grid */
+@media (min-width: 1024px) {
+    .destination-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#contact h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 5px solid #ffa500;
+}
+
+/* Contact box container */
+.contact_info {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual contact info box */
+.contact_info div {
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border: 2px rgba(0, 0, 0, 0.281) solid;
+}
+
+/* Heading in contact box */
+.contact_info div h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph in contact box */
+.contact_info div p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+/* Desktop responsiveness for contact */
+@media (min-width: 1024px) {
+    .contact_info {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contact_info div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablet and mobile responsiveness for contact */
+@media (max-width: 768px),
+       (max-width: 480px) {
+    .contact_info {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact_info div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Footer section */
+footer {
+    background-color: #0f1942;
+    color: #ffa500;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container inside footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Each footer column */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #ffa500;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Hover effect for list items */
+.footer-column ul li:hover {
+    color: #ffa500;
+}
+
+.footer-column p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    justify-content: start;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer copyright */
+.footer_rights {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d1533;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive footer layout */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
