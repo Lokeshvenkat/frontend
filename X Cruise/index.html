@@ -3,91 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>XCruise</title>
+    <title>Cruise Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/xCruise-logo.png?raw=true" alt="Cruise Ship">  
+        <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/logo.png?raw=true" class="logo" alt="Logo">
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Cruises</a>
+            <a href="#">Packages</a>
+            <a href="#contact">Contact</a>
         </div>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Deals</a></li>
-        </ul>
     </nav>
 
-    <section class="hero">
-        <div>
-            <h1>DISCOVER THE BEAUTY OF CRUISING WITH US</h1>
-            <p>For a Greater Beauty</p>
-            <button class="button">Book Now</button> 
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Explore the Oceans with Us</h1>
+        <p>Luxury Cruises at Unbeatable Prices</p>
+        <button>Book Now</button>
+    </div>
 
-    <section class="discover">
-        <div class="heading">
-            <h2>DISCOVER OUR DESTINATIONS</h2>
-            <p>Explore the best destinations we offer.</p>
-        </div>
-        <div class="popular">
+    <!-- Main Content -->
+    <main>
+        <!-- Heading Section -->
+        <section class="heading">
+            <h2>Popular Cruises</h2>
+            <p>Discover our top-rated cruise experiences</p>
+        </section>
+
+        <!-- Tags / Filters -->
+        <section class="popular">
+            <h3>Categories:</h3>
             <div class="pills">
-                <div class="pill">
-                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/weekend-cruises-pill.png?raw=true" alt="Weekend Cruises">
-                    <span>Weekend Cruises</span>
-                </div>
-                <div class="pill">
-                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/summer-cruises-pill.png?raw=true" alt="Summer Cruises">
-                    <span>Summer Cruises</span>
-                </div>
-                <div class="pill">
-                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/exotic-cruises-pill.png?raw=true" alt="Exotic Cruises">
-                    <span>Exotic Cruises</span>
+                <div><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/beach.png?raw=true">Beach</div>
+                <div><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/mountain.png?raw=true">Mountain</div>
+                <div><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/culture.png?raw=true">Culture</div>
+            </div>
+        </section>
+
+        <!-- Banner Image -->
+        <section class="banner">
+            <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/banner.png?raw=true" alt="Cruise Banner">
+        </section>
+
+        <!-- Cruise Cards Grid -->
+        <section class="grids">
+            <div class="card">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/cruise1.jpg?raw=true" alt="Cruise 1">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/bookmark.png?raw=true" class="bookmark">
+                <div class="card_info">
+                    <h4>Caribbean Escape</h4>
+                    <p>$899 - 7 Days</p>
                 </div>
             </div>
-        </div>
-        <div class="cards">
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/mediterranean-cruise.png?raw=true" alt="Mediterranean"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/dubai-cruise.png?raw=true" alt="Dubai"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/northern-europe-cruise.png?raw=true" alt="Northern Europe"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/redsea-cruise.png?raw=true" alt="Red Sea"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/bermuda-beach-cruise.png?raw=true" alt="Bermuda Beach"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/south-africa-cruise.png?raw=true" alt="South Africa"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/south-america-cruise.png?raw=true" alt="South America"></div>
-            <div class="card"><img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/asia-cruise.png?raw=true" alt="Asia"></div>
+            <div class="card">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/cruise2.jpg?raw=true" alt="Cruise 2">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/bookmark.png?raw=true" class="bookmark">
+                <div class="card_info">
+                    <h4>Mediterranean Dream</h4>
+                    <p>$999 - 10 Days</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/cruise3.jpg?raw=true" alt="Cruise 3">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/bookmark.png?raw=true" class="bookmark">
+                <div class="card_info">
+                    <h4>Alaskan Voyage</h4>
+                    <p>$799 - 5 Days</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/cruise4.jpg?raw=true" alt="Cruise 4">
+                <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/bookmark.png?raw=true" class="bookmark">
+                <div class="card_info">
+                    <h4>Baltic Capitals</h4>
+                    <p>$1,099 - 12 Days</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <hr>
+        <div class="contact_info">
+            <div>
+                <h4>Email</h4>
+                <p>info@cruise.com</p>
+            </div>
+            <div>
+                <h4>Phone</h4>
+                <p>+1 234 567 890</p>
+            </div>
+            <div>
+                <h4>Address</h4>
+                <p>123 Ocean Drive, Miami, FL</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h3>Contact Us</h3>
-        <div class="contact_info">
-            <div class="contact_information">
-                <h4>Contact Information</h4>
-                <p>6750 N. Andrews Avenue Suite 100 Fort Lauderdale, FL 33309</p>
-                <p>Call Us: +62-813 346 100</p>
+    <!-- Footer -->
+    <footer>
+        <div class="last_info">
+            <div class="foot_info">
+                <h3>About</h3>
+                <p>Luxury cruises since 1990</p>
+                <p>Top-rated customer service</p>
             </div>
-            <div class="hours_of_operation">
-                <h4>Hours of Operation</h4>
-                <p>Mon-Fri: 8:00 am - 11:00 pm EST</p>
-                <p>Sat-Sun: 9:00 am - 9:00 pm EST</p>
+            <div class="foot_info">
+                <h3>Explore</h3>
+                <p>Destinations</p>
+                <p>Offers</p>
+            </div>
+            <div class="foot_info">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/facebook.png?raw=true" alt="Facebook">
+                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/instagram.png?raw=true" alt="Instagram">
+                    <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/twitter.png?raw=true" alt="Twitter">
+                </div>
             </div>
         </div>
-    </section>
-<section class="footer">
-    <h5>Social Links</h5>
-    <div class="social-icons">
-        
-        <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/instagram-icon.png?raw=true" alt="Instagram">
-        <img src ="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/facebook-icon.png?raw=true" alt="Facebook">
-        <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/youtube-icon.png?raw=true" alt="YouTube">
-        <img src="https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/gmail-icon.png?raw=true" alt="Gmail">
-    </div>
-</section>  
-<section class="footer">
-    <div class="footer_rights">
-        <p>© 2024 xCruise In. All rights reserved</p>
-    </div>
-</section>  
+        <div class="footer_rights">
+            <p>&copy; 2024 XCruise. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
