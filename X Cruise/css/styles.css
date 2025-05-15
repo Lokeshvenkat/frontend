@@ -1,285 +1,87 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: #000033;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Logo container */
-.logo {
-    padding: 6px;
-}
-
 .logo img {
     width: 50px;
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/xCruise-logo.png");
 }
 
-/* Menu section */
-.menu {
-    padding: 6px;
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
-    color: white;
-    margin: 6px;
-    text-decoration: none;
-}
-
-/* Hero section with background image */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 99vw;
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png");
 }
 
-/* Hero text styling */
-.hero h1,
-.hero h2 {
-    color: white;
+/* Pills with updated images */
+.pills div:nth-child(1) img {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/weekend-cruises-pill.png");
 }
 
-/* Hero button styles */
-.hero button {
-    margin-top: 25px;
-    background-color: #e2710e;
-    color: white;
-    width: 100px;
-    height: 40px;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
+.pills div:nth-child(2) img {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/summer-cruises-pill.png");
 }
 
-/* Discover section container */
-.discover {
-    margin: 30px;
+.pills div:nth-child(3) img {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/exotic-cruises-pill.png");
 }
 
-/* Heading styling with left border */
-.heading {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-left: 4px solid #d7530b;
-}
-
-.heading h2 {
-    color: black;
-}
-
-.heading p {
-    margin-top: 15px;
-}
-
-/* Popular destinations label */
-.popular {
-    display: flex;
-    margin-top: 20px;
-}
-
-.popular h4 {
-    margin-top: 6px;
-}
-
-/* Pill container styles */
-.pills {
-    display: flex;
-}
-
-/* Each pill styling */
-.pills div {
-    box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-    border-radius: 40px;
-    margin: 4px;
-    padding: 4px;
-}
-
-/* Icons inside pills */
-.pills div img {
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin-right: 6px;
-}
-
-/* Banner section */
+/* Banner image */
 .banner {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/caribbean-cruise.png?raw=true");
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    width: 95vw;
-    margin-top: 10px;
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/caribbean-cruise.png");
 }
 
-/* Banner text */
-.banner-content {
-    padding: 20px;
-    color: white;
-}
-
-.banner-content h3 {
-    margin-top: 10em;
-}
-
-/* Top right corner bookmark icon in banner */
-.bookmark {
-    border-radius: 50%;
-    padding: 4px;
-    background-color: #413d3d;
-    width: 18px;
-    height: 18px;
-    margin-left: 92vw;
-    margin-top: 10px;
-}
-
-/* Grid layout for destination cards */
-.cards {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* Individual card base styles */
-.card {
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    width: 330px;
-}
-
-.card h4 {
-    margin-top: 8.5em;
-}
-
-/* Unique background images for each card */
+/* Destination card backgrounds */
 #card1 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/mediterranean-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/mediterranean-cruise.png");
 }
 
 #card2 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/dubai-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/dubai-cruise.png");
 }
 
 #card3 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/northern-europe-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/northern-europe-cruise.png");
 }
 
 #card4 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/redsea-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/redsea-cruise.png");
 }
 
 #card5 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/bermuda-beach-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/bermuda-beach-cruise.png");
 }
 
 #card6 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/south-africa-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-africa-cruise.png");
 }
 
 #card7 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/south-america-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-america-cruise.png");
 }
 
 #card8 {
-    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/asia-cruise.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/asia-cruise.png");
 }
 
-/* Bookmark icon inside cards */
-.bookmarks {
+/* Optional: Bookmark icon in top-right of each card */
+.bookmark, .bookmarks {
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/save-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    padding: 4px;
-    background-color: #413d3d;
     width: 18px;
     height: 18px;
-    margin-left: 305px;
-}
-
-/* Contact section styles */
-#contact {
-    margin: 15px 0;
-    text-align: center;
-}
-
-#contact h3 {
-    margin-left: 47vw;
-    margin-bottom: 30px;
-    width: 90px;
-    border-bottom: 4px solid #d3680b;
-}
-
-/* Contact details and hours layout */
-.contact_info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* Contact detail boxes */
-.contact_information,
-.hours_of_operation {
-    border: 4px solid rgba(21, 21, 20, 0.123);
-    padding: 15px;
-    width: 500px;
-}
-
-/* Footer base */
-.footer {
-    background-color: #000033;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Footer content layout */
-.footer_content {
-    margin-top: 20px;
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 4px solid #5e5a5a;
-    padding-bottom: 20px;
-}
-
-/* Footer section headers */
-.footer_content div h3 {
-    color: #d3680b;
-    margin: 6px 0;
-}
-
-/* Footer text */
-.footer_content div p {
-    color: white;
-    margin-top: 6px;
 }
 
 /* Social media icons */
-.social-icons img {
-    width: 20px;
-    height: 20px;
+.social-icons img[alt="Instagram"] {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/instagram-icon.png");
 }
 
-/* Copyright section */
-.footer_rights {
-    color: white;
-    padding: 10px;
+.social-icons img[alt="Facebook"] {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/facebook-icon.png");
+}
+
+.social-icons img[alt="YouTube"] {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/youtube-icon.png");
+}
+
+.social-icons img[alt="GMail"] {
+    content: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/gmail-icon.png");
 }
