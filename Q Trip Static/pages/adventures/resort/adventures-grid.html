@@ -2,164 +2,138 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>QTrip Adventure Detail</title>
-   <link rel="stylesheet" href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/pages/adventures/resort/css/styles.css" />
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
+    <!-- Metadata and external CSS/JS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip Adventure Detail</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../css/styles.css" />
 </head>
 
 <body>
-   <!-- TODO: MODULE_ADVENTURE_DETAILS -->
-   <!-- 1. Copy navigation bar HTML from Landing page document -->
+    <!-- Navigation Bar copied from landing page -->
+    <nav>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid d-flex">
+                <!-- Brand name / Home link -->
+                <a class="navbar-brand" href="../../../index.html">QTrip</a>
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/index.html">QTrip</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/pages/adventures/resort/adventures-grid.html">Explore</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+                <!-- Hamburger menu for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-   <div class="container">
-
-      <div class = "text">
-      <h2>Explore All Adventures</h2>
-      <p>Here's a list of all adventures you can explore in city</p></div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="index.html" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/beachside.jpg" class="card-img-top img-hover-zoom" alt="beachside">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Beach Side</h5>
+                <!-- Collapsible navigation links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- Home link -->
+                        <a class="nav-link active" aria-current="page" href="../../../index.html"
+                            target="_blank">Home</a>
+                        <!-- Explore link -->
+                        <a class="nav-link" href="../../adventures/index.html" target="_blank">Explore</a>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/canopy.jpg" class="card-img-top img-hover-zoom" alt="Canopy">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Canopy</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/church.jpg" class="card-img-top img-hover-zoom" alt="Chruch">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Chruch</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/elephant.jpg" class="card-img-top img-hover-zoom" alt="elephant">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Elephant</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/huts.jpg" class="card-img-top img-hover-zoom" alt="huts">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Huts</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="#" class="text-decoration-none">
-                <div class="card">
-                    <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/market.jpg" class="card-img-top img-hover-zoom" alt="market">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Market</h5>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/mount.jpg" class="card-img-top img-hover-zoom" alt="mount">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Mount</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <a href="#" class="text-decoration-none">
-            <div class="card">
-                <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/palace.jpg" class="card-img-top img-hover-zoom" alt="palace">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Palace</h5>
                 </div>
             </div>
-        </a>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <a href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/pages/adventures/index.html" class="text-decoration-none">
-          <div class="card">
-              <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/resort.jpg" class="card-img-top img-hover-zoom" alt="resort">
-              <div class="card-body">
-                  <h5 class="card-title text-center">Resort</h5>
-              </div>
-          </div>
-      </a>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4 mb-4">
-   <a href="#" class="text-decoration-none">
-       <div class="card">
-           <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/tower.jpg" class="card-img-top img-hover-zoom" alt="tower">
-           <div class="card-body">
-               <h5 class="card-title text-center">Tower</h5>
-           </div>
-       </div>
-   </a>
-</div>
-<div class="col-12 col-md-6 col-lg-4 mb-4">
-   <a href="#" class="text-decoration-none">
-       <div class="card">
-           <img src="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/assets/adventures/university.jpg" class="card-img-top img-hover-zoom" alt="university">
-           <div class="card-body">
-               <h5 class="card-title text-center">University</h5>
-           </div>
-       </div>
-   </a>
-</div>
-    </div>
-  </div>
-   <footer>
-      <div class="container">© QTrip 2020</div>
-   </footer>
+        </nav>
+    </nav>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+    <!-- Main content container -->
+    <div class="container px-0">
+        <div class="content row mx-0">
+            <!-- Left column: Adventure details -->
+            <div class="col-12 col-lg-8">
+                <div class="adventure-details">
+                    <!-- Image tiles -->
+                    <div class="row">
+                        <!-- Main image -->
+                        <div class="tile-5 col-12 col-lg-8">
+                            <img src="../../../assets/adventures/resort/resort1.jpg" alt="Resort">
+                        </div>
+                        <!-- Two side images (visible only on large screens) -->
+                        <div class="tile-5 d-none d-lg-block col-lg-4">
+                            <div class="tile-6">
+                                <img src="../../../assets/adventures/resort/resort2.jpg" alt="Resort2">
+                            </div>
+                            <div>
+                                <img src="../../../assets/adventures/resort/resort3.jpg" alt="Resort3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adventure title and description -->
+                    <div class="pt-2">
+                        <h5>Sunshine Resort</h5>
+                        <p>Relax and unwind yourself</p>
+                        <hr>
+                    </div>
+
+                    <!-- About the experience section -->
+                    <div class="about">
+                        <h5>About the Experience</h5>
+                        <p>
+                            Chairman’s Jade Resort is constructed in the most natural setting for a day out that pleases
+                            the senses...
+                        </p>
+
+                        <!-- List of included features -->
+                        <h5>Inclusions</h5>
+                        <ul>
+                            <li>Swimming pool access</li>
+                            <li>Outdoor sports - Water Polo, Archery, Tennis, and Zorbing</li>
+                            <li>Indoor games - Indoor Squash, Table Tennis, Carrom, Badminton, Chess, Billiards, and
+                                X-Box 360 KINECT</li>
+                            <li>Parking</li>
+                        </ul>
+
+                        <!-- Pre-requisites and important information -->
+                        <h5>Know before you go</h5>
+                        <ul>
+                            <li>Game accessories like balls and shuttlecocks will need to be purchased</li>
+                            <li>All adventures and game accessories are subject to availability</li>
+                            <li>Nylon swimwear must be worn at all times when using the swimming pool</li>
+                            <li>Children must be accompanied by parents or guardians at all times</li>
+                            <li>Complimentary entry for children below the height of three feet...</li>
+                        </ul>
+
+                        <!-- Items not provided -->
+                        <h5>Not included</h5>
+                        <ul>
+                            <li>Swimwear</li>
+                            <li>Pickup and drop</li>
+                            <li>Towel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column: Booking panel / Status -->
+            <div class="tile-7 col-12 col-lg-4">
+                <div class="panel">
+                    <h5>Sold Out</h5>
+                    <hr>
+                    <p>This adventure is currently sold out. But there's a lot more to <span><a href="../index.html"
+                                target="_blank">explore</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">© QTrip 2020</div>
+    </footer>
+
+    <!-- Bootstrap JS for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
