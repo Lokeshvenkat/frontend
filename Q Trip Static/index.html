@@ -1,122 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QTrip</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Basic meta tags for character set and responsive scaling -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title -->
+    <title>QTrip</title>
+
+    <!-- Bootstrap CSS CDN for styling and layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">QTrip</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/workspace/lokeshvenkat36-ME_QTRIPSTATIC/pages/adventures/resort/adventures-grid.html">Explore</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-   <div class="hero-image d-flex flex-column align-items-center justify-content-center">
-    <h1 class="hero-heading">Welcome to QTrip</h1>
-    <p class="hero-subheading">Explore the world with fantastic places to venture around</p>
-    <input type="text" class="hero-input form-control w-50" placeholder="Search for a City">
-</div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="adventures-grid.html" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/bengaluru.jpg" class="card-img-top img-hover-zoom " alt="Bangalore">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Bangalore</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/dubai.jpg" class="card-img-top img-hover-zoom" alt="Dubai">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Dubai</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/goa.jpg" class="card-img-top img-hover-zoom" alt="Goa">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Goa</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/kolkata.jpg" class="card-img-top img-hover-zoom" alt="Kolkata">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Kolkata</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/malaysia.jpg" class="card-img-top img-hover-zoom" alt="malaysia">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Malaysia</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <a href="#" class="text-decoration-none">
-              <div class="card">
-                  <img src="assets/mumbai.jpg" class="card-img-top img-hover-zoom" alt="mumbai">
-                  <div class="card-body">
-                      <h5 class="card-title text-center">Mumbai</h5>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <a href="#" class="text-decoration-none">
-            <div class="card">
-                <img src="assets/paris.jpg" class="card-img-top img-hover-zoom" alt="paris">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Paris</h5>
+
+    <!-- Navigation bar with brand and two links: Home and Explore -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="#">QTrip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links, right-aligned -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="pages/adventures/index.html" target="_blank">Explore</a>
                 </div>
             </div>
-        </a>
+        </div>
+    </nav>
+
+    <!-- Hero section with heading, subheading and search input -->
+    <div class="hero-image d-flex text-center">
+        <h1>Welcome to QTrip</h1>
+        <p class="subheading text-light px-3">Explore the world with fantastic places to venture around</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search a City" aria-label="Search a City"
+                aria-describedby="button-addon2">
+        </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <a href="#" class="text-decoration-none">
-          <div class="card">
-              <img src="assets/singapore.jpg" class="card-img-top img-hover-zoom" alt="singapore">
-              <div class="card-body">
-                  <h5 class="card-title text-center">Singapore</h5>
-              </div>
-          </div>
-      </a>
-  </div>
-  </div>
-</div>
-  <footer>
-    <div class="container">© QTrip 2020</div>
-  </footer>
+
+    <!-- Main grid layout of city tiles -->
+    <div class="container">
+        <div class="row">
+            <!-- Bengaluru tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="pages/adventures/index.html" target="_blank">
+                        <img src="assets/bengaluru.jpg" alt="Bengaluru">
+                        <div class="tile-text">
+                            <h5>Bengaluru</h5>
+                            <p>100+ Places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolkata tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/kolkata.jpg" alt="Kolkata">
+                        <div class="tile-text">
+                            <h5>kolkata</h5>
+                            <p>52+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Goa tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/goa.jpg" alt="Goa">
+                        <div class="tile-text">
+                            <h5>goa</h5>
+                            <p>160+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mumbai tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/mumbai.jpg" alt="Mumbai">
+                        <div class="tile-text">
+                            <h5>mumbai</h5>
+                            <p>121+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Singapore tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/singapore.jpg" alt="Singapore">
+                        <div class="tile-text">
+                            <h5>singapore</h5>
+                            <p>89+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dubai tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/dubai.jpg" alt="Dubai">
+                        <div class="tile-text">
+                            <h5>dubai</h5>
+                            <p>74+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Malaysia tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/malaysia.jpg" alt="Malaysia">
+                        <div class="tile-text">
+                            <h5>malaysia</h5>
+                            <p>172+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Paris tile -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-3 mt-3">
+                <div class="tile">
+                    <a href="#"><img src="assets/paris.jpg" alt="Paris">
+                        <div class="tile-text">
+                            <h5>paris</h5>
+                            <p>150+ places</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with copyright -->
+    <footer>
+        <div class="container">© QTrip 2020</div>
+    </footer>
+
+    <!-- Bootstrap JavaScript bundle for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
